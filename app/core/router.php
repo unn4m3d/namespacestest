@@ -48,6 +48,7 @@
 				Router::pageNotFound();
 			}
 
+			$controller = "Controllers\\".$controller;
 			$controller = new $controller;
 
 			if( method_exists($controller, $action) )
